@@ -2,7 +2,6 @@ import argparse
 import csv
 import json
 import random
-import sys
 from pathlib import Path
 
 import numpy as np
@@ -10,9 +9,8 @@ import torch
 import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from model import EffusionMIL
 from pipeline.data import aggregate, load_bag, read_manifest, validate_patient_splits
+from pipeline.models.effusion_mil import EffusionMIL
 
 
 def evaluate(model, rows, device, feature_dim, num_classes):
