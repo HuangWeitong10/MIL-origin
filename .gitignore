@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.ckpt
+*.sdpc
+*.csv
+*.log
+data/
+logs/
+checkpoints/
