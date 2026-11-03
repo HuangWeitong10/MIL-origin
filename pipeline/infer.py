@@ -1,13 +1,11 @@
 import argparse
 import csv
-import sys
 from pathlib import Path
 
 import torch
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from model import EffusionMIL
 from pipeline.data import aggregate, load_bag, read_manifest
+from pipeline.models.effusion_mil import EffusionMIL
 
 
 def write_scores(path, header, rows):
