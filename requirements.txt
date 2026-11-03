@@ -1,0 +1,6 @@
+numpy
+Pillow
+scikit-learn
+torch
+torchvision
+timm==0.9.16
